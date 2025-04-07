@@ -1,32 +1,32 @@
-// function slider() {
-//     return {
-//       currentIndex: 0,
-//       images: [
-//         "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20Modern%20MD271UL-915x420.jpg",
-//         "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20RTX%205070%20Ti-915x420.jpg",
-//         "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20Printer-915x420.jpg",
-//         "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20Camera-915x420.jpg",
-//         "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20MSI%20Prestige%2016%20AI+-915x420.jpg",
-//         "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20TUF%20Gaming%20A14-915x420.jpg"
-//       ],
-//       interval: null,
+function slider() {
+    return {
+      currentIndex: 0,
+      images: [
+        "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20Modern%20MD271UL-915x420.jpg",
+        "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20RTX%205070%20Ti-915x420.jpg",
+        "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20Printer-915x420.jpg",
+        "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20Camera-915x420.jpg",
+        "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20MSI%20Prestige%2016%20AI+-915x420.jpg",
+        "https://www.goldonecomputer.com/image/cache/catalog/Banner%20and%20Slide/250221%20TUF%20Gaming%20A14-915x420.jpg"
+      ],
+      interval: null,
   
-//       next() {
-//         this.currentIndex = (this.currentIndex + 1) % this.images.length;
-//       },
-//       prev() {
-//         this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
-//       },
-//       goTo(index) {
-//         this.currentIndex = index;
-//       },
-//       init() {
-//         this.interval = setInterval(() => {
-//           this.next();
-//         }, 4000);
-//       }
-//     }
-//   }
+      next() {
+        this.currentIndex = (this.currentIndex + 1) % this.images.length;
+      },
+      prev() {
+        this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+      },
+      goTo(index) {
+        this.currentIndex = index;
+      },
+      init() {
+        this.interval = setInterval(() => {
+          this.next();
+        }, 4000);
+      }
+    }
+  }
   
   fetch('https://shop-computer.onrender.com/FEATURE')
    .then(response => response.json())
