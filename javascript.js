@@ -28,7 +28,7 @@ function slider() {
     }
   }
   
-  fetch('http://localhost:3000/FEATURE')
+  fetch('https://shop-computer.onrender.com/FEATURE')
    .then(response => response.json())
    .then(data => {  
       let li1 = document.getElementById('li1');
@@ -47,7 +47,7 @@ function slider() {
       });
     })
   
-    fetch('http://localhost:3000/header')
+    fetch('https://shop-computer.onrender.com/header')
     .then(response => response.json())
     .then(data => {  
       let header = document.getElementById('header');
@@ -63,7 +63,7 @@ function slider() {
     });
   
     let footer = document.getElementById("footer");
-    fetch('http://localhost:3000/footer')
+    fetch('https://shop-computer.onrender.com/footer')
     .then(res => res.json())
     .then(data => {
          data.Image.forEach(e => {
@@ -74,7 +74,7 @@ function slider() {
     });
   
     let desktop = document.getElementById('desktop');
-    fetch('http://localhost:3000/DESKTOP')
+    fetch('https://shop-computer.onrender.com/DESKTOP')
        .then(response => response.json())
        .then(data => {
             data.forEach(item => {
@@ -104,7 +104,7 @@ function slider() {
         });
   
     let LAPTOP = document.getElementById('LAPTOP');
-    fetch('http://localhost:3000/LAPTOP')
+    fetch('https://shop-computer.onrender.com/LAPTOP')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -134,7 +134,7 @@ function slider() {
     });
     
     let LATEST = document.getElementById('LATEST');
-    fetch('http://localhost:3000/latest')
+    fetch('https://shop-computer.onrender.com/latest')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -164,7 +164,7 @@ function slider() {
     });
   
     let monitor = document.getElementById('monitor');
-    fetch('http://localhost:3000/monitor')
+    fetch('https://shop-computer.onrender.com/monitor')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -194,7 +194,7 @@ function slider() {
     });
   
     let COMPONENTS = document.getElementById('COMPONENTS');
-    fetch('http://localhost:3000/component')
+    fetch('https://shop-computer.onrender.com/component')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -223,7 +223,7 @@ function slider() {
       });
     });
     let GAMING = document.getElementById('GAMING');
-    fetch('http://localhost:3000/gaming')
+    fetch('https://shop-computer.onrender.com/gaming')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -252,7 +252,7 @@ function slider() {
       });
     });
     let ACCESSORIES = document.getElementById('ACCESSORIES');
-    fetch('http://localhost:3000/accessories')
+    fetch('https://shop-computer.onrender.com/accessories')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -281,7 +281,7 @@ function slider() {
       });
     });
     let AUDIO = document.getElementById('AUDIO');
-    fetch('http://localhost:3000/audio')
+    fetch('https://shop-computer.onrender.com/audio')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -310,7 +310,7 @@ function slider() {
       });
     });
     let PROJECTOR = document.getElementById('PROJECTOR');
-    fetch('http://localhost:3000/projector')
+    fetch('https://shop-computer.onrender.com/projector')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -339,7 +339,7 @@ function slider() {
       });
     });
     let PRINTER = document.getElementById('PRINTER');
-    fetch('http://localhost:3000/printer')
+    fetch('https://shop-computer.onrender.com/printer')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
@@ -368,7 +368,7 @@ function slider() {
       });
     });
     let DIGITAL = document.getElementById('DIGITAL');
-    fetch('http://localhost:3000/digital')
+    fetch('https://shop-computer.onrender.com/digital')
     .then(response => response.json())
     .then(data => {
       data.forEach(item => {
